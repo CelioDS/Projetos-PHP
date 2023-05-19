@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css//bootstrap.min.css">
+    <link rel="shortcut icon" href="../img/as.ico" type="img/x-icon">
+    <!-- ../css/bootstrap.css volta pag -->
+    <script src="https://cdn.jsdelivr.net/gh/brunoalbim/devtools-detect/index.js"></script>
+    <script src="../js/bloquear.js" defer></script>
+    <title>game</title>
+</head>
+
+<body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0PRCC31BT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H0PRCC31BT');
+    </script>
+
+    <main>
+        <div class="game">
+            <img class='pipe ' src="../img/pipe.png">
+            <img class='mario' src="../img/mario.png">
+            <img class='clounds' src="../img/nuvem.png">
+            <div class="painel">
+                <h1 class="player"> </h1>
+                <h1 class="number" id="contador"></h1>
+
+            </div>
+            <div class="reiniciar" id="reiniciar">
+                <form action="../php/cadastro.php" method="POST">
+                    <div class="banco">
+                        <input type="text" id='bdnome' name="bdnome">
+                        <input type="text" id='bdscore' name="bdscore">
+                    </div>
+                    <input id="botao" class="play " type="submit" value="REINICIAR">
+                </form>
+                <h1 class="player1"></h1>
+                <h1 class="number1"></h1>
+
+
+            </div>
+            <h1 class="gamerover" id="gamerover"></h1>
+            <h1 class="etapa " id="etapa"></h1>
+            <h1 class="texto" id="texto"></h1>
+            <button class="button-inicio"><a href="../index.php">Inicio</a></button>
+        </div>
+    </main>
+
+
+    <footer id="footer">
+        <div class="card text-center bg-dark footer ">
+            <div class="card-header text-white ">
+                Criado e desenvolvido por <a class="rede"
+                    href="https://www.linkedin.com/in/c%C3%A9lio-da-silva-3b20131b7/" target="_blank"
+                    rel="noopener noreferrer">Célio</a>
+            </div>
+            <div class="card-body">
+                <p title="email" class="email"><a class="rede" href="mailto:celio01t@gmail.com"> <img
+                            src="img/email.png" alt="">
+                        celio01t@gmail.com</a></p>
+                <a href="https://www.linkedin.com/in/c%C3%A9lio-da-silva-3b20131b7/" target="_blank"
+                    rel="noopener noreferrer"><img class="rede" src="../img/linkedin.png" alt="linkedin"></a>
+
+                <a href="https://github.com/CelioDS" target="_blank" rel="noopener noreferrer"><img class="rede"
+                        src="../img/git.png" alt="github"></a>
+
+                <a href="https://www.instagram.com/celio.thug/" target="_blank" rel="noopener noreferrer"><img
+                        class="rede" src="../img/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="card-footer text-white ">
+                <script>
+                    date = new Date().toLocaleDateString();
+                    document.write(date);
+                </script>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/script.js" ></script>
+
+</html>

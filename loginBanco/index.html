@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginCadastro.css">
+    <link rel="shortcut icon" href="imagem/as.ico" type="img/x-icon">
+    <script src="https://cdn.jsdelivr.net/gh/brunoalbim/devtools-detect/index.js"></script>
+    <script src="js/bloquear.js"></script>
+    <title>login e cadastro</title>
+</head>
+
+<body>
+    <div class="localbtn">
+        <button class="btn-cadastro"><a href="cadastrarusuario.html"> Cadastrar usuario</a></button>
+    </div>
+
+    <section>
+        <figure class="figura">
+            <h1>Acessar ao Banco de Dados</h1>
+            <br>
+            <img src="imagem/cadastro.png" alt="">
+        </figure>
+        <div class="entrar">
+
+            <form method="POST" action="php/acaologin.php">
+
+                <div class="inputBox">
+                    <br><br>
+                    <input class="input" type="text" name="txtnome" required>
+                    <br><br>
+                    <label class="labelinput">Nome de Usuario</label>
+                </div>
+
+                <div class="inputBox">
+
+                    <br><br>
+                    <input class="input" type="password" name="txtsenha" required>
+                    <br><br>
+                    <label class="labelinput">Senha de Acesso</label>
+                    <br><br>
+
+                </div>
+                <br><br>
+                <br><br>
+                <button type="submit" class="btnentrar" name="btnentrar" value="Entrar site">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

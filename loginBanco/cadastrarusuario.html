@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginCadastro.css">
+    <link rel="shortcut icon" href="imagem/as.ico" type="img/x-icon">
+    <!--    <script src="js/swet.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/brunoalbim/devtools-detect/index.js"></script>
+    <script src="js/bloquear.js"></script>
+    <title>login e cadastro</title>
+</head>
+
+<body>
+    <div class="localbtn">
+        <button class="btn-login"><a href="index.html"> Login</a></button>
+    </div> 
+
+    <section>
+
+        <figure class="figura">
+            <h1>Cadastre um novo usuario. </h1>
+            <br>
+            <img src="imagem/login.png" alt="">
+        </figure>
+
+        <div class="cadastrar">
+            <form id="form-cliente" method="POST" action="php/acaocadastro.php">
+                <div class="inputBox">
+                    <br><br>
+                    <input autocomplete="off" class="input" type="text" name="txtnome" id="txtnome" required>
+                    <br><br>
+                    <label class="labelinput">Nome do Usuario</label>
+                </div>
+
+                <div class="inputBox">
+                    <br><br>
+                    <input autocomplete="off" class="input" type="password" name="txtsenha" id="txtsenha" required>
+                    <br><br>
+                    <label class="labelinput">Senha de Acesso</label>
+                </div>
+
+                <br>
+                <label class="labelselect"><strong> Nivel de acesso:</strong></label>
+                <select name="txtnivel" id="txtnivel" required>
+                    <option value="Usuario">Usuario</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+                <br><br> <br>
+                <br><br>
+
+                <button type="submit" class="btncadastrar" value="Cadastrar">Cadastrar se</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

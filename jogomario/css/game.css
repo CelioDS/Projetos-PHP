@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    user-select: none;
+    /*desativa a seleção*/
+
+}
+
+
+.rede {
+    text-decoration: none;
+    color: white;
+}
+
+.game {
+    width: 100%;
+    height: 79.4vh;
+    border-bottom: 5px solid blue;
+    margin: 0 auto;
+    position: relative;
+    /* respeita a delimitação */
+    overflow: hidden;
+    /*tudo que estiver fora na delimitação sommen*/
+    border-bottom: 25px solid rgb(64, 233, 64);
+    background-image: linear-gradient(rgb(21, 236, 243), white);
+}
+
+
+
+.pipe {
+    position: absolute;
+    /* nao intefere nas outras imagens*/
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite ease-in;
+
+}
+
+
+@keyframes pipe-animation {
+    from {
+        right: -85px;
+    }
+
+    to {
+        right: 101%;
+    }
+}
+
+.mario {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.jump {
+    animation: animation-jump 500ms ease-in;
+}
+
+@keyframes animation-jump {
+    0% {
+        bottom: 0;
+      
+    }
+
+    40% {
+        bottom: 150px;
+       
+    }
+
+    50% {
+        bottom: 160px;
+        left: 20px
+    }
+
+    60% {
+        bottom: 150px;
+       
+       
+    }
+
+    100% {
+        bottom: 0;
+        left: 15px
+    }
+}
+
+@keyframes animation-jump2 {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 150px;
+        transform: translateY(250%);
+    }
+
+    50% {
+        bottom: 160px;
+    }
+
+    60% {
+        bottom: 150px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.clounds {
+    position: absolute;
+    /* nao altera outros itens*/
+    width: 1000px;
+    animation: clounds 10s infinite linear;
+}
+
+@keyframes clounds {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.gamerover {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 15vh;
+    
+}
+
+.etapa {
+    text-align: left;
+    color: rgb(255, 0, 0);
+    font-size: 5vh;
+}
+
+.texto {
+    position: absolute;
+    bottom: 200px;
+    left: 180px;
+    color: blue;
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 470px) {
+    .pipe {
+        width: 80px;
+        animation: pipe-animation 1s infinite ease-in;
+    }
+
+    .gamerover {
+        font-size: 8vh;
+        top: 100px;
+
+    }
+
+ 
+
+    .texto {
+        left: 110px;
+        bottom: 50px;
+    }
+
+    .game {
+        height: 68vh;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+  
+
+    .texto {
+        display: none;
+    }
+
+
+}
+
+.reiniciar {
+    display: absolute;
+    opacity: 0;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(199, 0, 0));
+    position: absolute;
+    height: 160px;
+    width: 80%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    left: 1000px;
+    right: 0;
+    margin: auto;
+    top: 100px;
+
+}
+
+.play {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    color: WHITE;
+
+}
+
+.play:hover,
+.button-inicio a:hover {
+    opacity: 0.5;
+    color: WHITE;
+}
+
+
+
+.button-inicio a:active {
+    color: white;
+}
+
+
+.button-inicio a {
+    text-decoration: none;
+
+    font-weight: bolder;
+    font-size: 25px;
+    color: WHITE;
+}
+
+.button-inicio {
+    margin: 4px 4px;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+    /* top | right | bottom | left */
+    background: red;
+    border-radius: 15px;
+    right: 0;
+    top: 0;
+
+}
+
+.painel {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    /* top | right | bottom | left */
+    border-radius: 15px;
+}
+
+.banco {
+    display: none;
+}
+
+
+
+
+/*****        LOGIN      *****/
+
+#footer{
+    background-color: rgb(27, 26, 26);
+}
